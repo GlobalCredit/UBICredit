@@ -49,8 +49,3 @@ ValidateWalletRunningNode();
 
 [Amount Of Active Node Wallets]
 TotalNodeWallets = ActiveNodeWallets
-
-NodeRewards = TaxCollected/ActiveNodeWallets
-
-If(Running_Node) {
-Tax
