@@ -36,13 +36,21 @@ IssueTaxCredit = True;
 [Total Tax Collected From Transactional Tax]
 TaxPool = TransactionalTaxCollected
 
+[Calculate TaxPool For Basic UBI]
+BasicTaxPool = TaxPool - NodeRewards
+[Calculate TaxPool For Node UBI][Users Who Run Nodes Get Double Tax Credit Rewards As Compared To Regular Users]
+NodeTaxPool = (NodeRewards / ActiveNodeWallets)
+
 [Reward Set Aside For Node Wallets]
 TaxPoolNodeReward = (Taxpool * 2)
+
+[Check Wallets Running Nodes]
+ValidateWalletRunningNode();
 
 [Amount Of Active Node Wallets]
 TotalNodeWallets = ActiveNodeWallets
 
-NodeReward = TaxCollected/ActiveNodeWallets
+NodeRewards = TaxCollected/ActiveNodeWallets
 
 If(Running_Node) {
 Tax
