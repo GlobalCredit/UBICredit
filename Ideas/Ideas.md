@@ -1,7 +1,17 @@
 Potential Ideas:
 
-[Current Tax Week Which Will Be Incremental Every Sunday Night]
+[Current UBI Week Which Will Be Incremental Every Sunday Night at 11:59PM]
+[When UBIWeek Hits 17 Enable Set TaxCreditWeek to 1 & Pay Pool Tax Credit For Universal Basic Income Program]
+UBIWeek = 1;
+If(UBIWeek = Sunday) {
+UBIWeek++;
+If(UBIWeek = 17) {
 TaxCreditWeek = 1;
+IssueTaxCredit = True;
+}
+
+[Current TaxCreditWeek Which Will Be Incremental Every Sunday Night]
+TaxCreditWeek = 0;
 
 [Current Status Of Tax Payments From Pool]
 Boolean TaxCreditPaid = false;
