@@ -49,3 +49,8 @@ ValidateWalletRunningNode();
 
 [Amount Of Active Node Wallets]
 TotalNodeWallets = ActiveNodeWallets
+
+
+[Blockchain must record and add activeusers to a pool of wallets for future UBI payments]
+[Blockchain must record payments of UBI to active users & node running users]
+[UBICredit cannot double pay any 1 wallet more than is entitled]
